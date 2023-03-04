@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/hojas estilo css.css">
+    <title>LISTA Y FORMULARIO</title>
+        <style>
+        </style>
+
+</head>
+        
+    <header>
+        <img src="../IMG/incap.jpeg" width="100" height="100" alt="">
+        <h1>LISTAS EN HTML</h1>
+        
+    </header>
+    <nav>
+    <ul>
+        <li type="disc" style="color: rgb(255, 255, 255);">HOME</li>
+        <li type="square" style="color: rgb(255, 255, 255);">PRODUCTOS</li>
+        <li type="circle" style="color: rgb(252, 254, 255);">SERVICIOS</li>
+        <li style="color: rgb(255, 255, 255);">CONTACTO</li>
+    </ul>
+    </nav>
+    <section>
+        <!-- method GET pasa los datos por la url, atravez de parametros// Method POST pasa los datos de forma interna(no se ven) -->
+        <form action="datos.php" method="post">
+        
+            <!-- seccion ingreso de nombre -->
+            <label style="color: aliceblue;"> Nombre completo:</label>
+            <input name="nombre" type="text" placeholder="ingrese su nombre completo" required>
+            <br><br>
+
+                <!-- seccion Email -->
+                <label style="color: aliceblue;font-size: 20px;">E-mail</label>
+                <input name="email" type="email" placeholder="ingrese su Email" required>
+                <br><br>
+
+                <!-- seccion contraseña -->
+                <label style="color: aliceblue;font-size: 20px;">contraseña:</label>
+                <input name="contraseña" type="password" placeholder="ingrese su contaseña" required>
+                <br><br>
+
+                <!-- seccion hobbies -->
+                <label style="color: aliceblue;">selecciona tus hobbies</label>
+                <br>
+                    <body style="color: aliceblue;">
+                        
+                    
+                    <input name="cine" type="checkbox"> Cine <br></body>
+                        
+                    
+                    <input name="lectura" type="checkbox" style="color: aliceblue;">lectura<br>
+                    <input name="deporte" type="checkbox" style="color: aliceblue;">deporte <br>
+                    <br>
+                    <br>
+
+                    <!-- estado civil -->
+                    
+                    <label style="color: aliceblue;">estado civil</label><br>
+                        <input name="estcivil" type="radio" value="casado" style="color: aliceblue;">casado(a) <br>
+                        <input name="estcivil" type="radio" value="soltero" style="color: aliceblue;">soltero(a) <br>
+                        <input name="estcivil" type="radio" value="viudo" style="color: aliceblue;">viudo(a) <br>
+                        <br><br>
+
+                        <!-- seleccionar opcion lista -->
+                        <label style="font-size: 20px;">PROGRAMAS TECNICOS:</label>
+                        <select name="select">
+                            <option>seleccione programa...</option>
+                            <option>sistemas</option>
+                            <option>diseño grafico</option>
+                            <option>contabilidad</option>
+                        </select>
+                        <br><br>
+                        <label>Tu comentario:</label>
+                            <textarea name="mensaje"  cols="40" rows="5"></textarea>
+                        </fieldset>
+                        <br><br>
+                        <!-- seccion de botones formulario submit:enviar datos cancel: borrar datos ingresados -->
+                        <button type="submit">enviar</button>
+                        <button type="reset">cancelar</button>
+                        <br><br>
+                        </form>
+                    </section>
+                    <!-- seccion de pie de pagina -->
+                    <footer>
+                        derechos reservados &copy;2022&#64 SARA STD
+
+                    </footer>
+
+</body>
+</html>
